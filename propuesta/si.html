@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>¡Siii, Karen! 💖</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: radial-gradient(circle, #c2e9fb, #a1c4fd);
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      color: #4a4a4a;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+      position: relative;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: #ff4081;
+      margin: 1rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+      max-width: 600px;
+      margin: 1rem;
+    }
+
+    .celebration {
+      font-size: 2rem;
+      animation: pulse 1.5s infinite;
+      margin-top: 1rem;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.1); opacity: 0.8; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    .gif {
+      width: 250px;
+      border-radius: 15px;
+      margin: 2rem 0;
+    }
+
+    .hearts {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      overflow: hidden;
+    }
+
+    .heart {
+      position: absolute;
+      animation: float 6s infinite ease-in;
+      color: #ffb6c1;
+      font-size: 2rem;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(100vh) scale(1); opacity: 0; }
+      50% { opacity: 1; }
+      100% { transform: translateY(-10vh) scale(1.5); opacity: 0; }
+    }
+
+    .options {
+      margin-top: 2rem;
+    }
+
+    button {
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 12px;
+      background-color: #ffffff;
+      color: #5d8aa8;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin: 0.5rem;
+    }
+
+    button:hover {
+      background-color: #e0eaff;
+    }
+  </style>
+</head>
+<body>
+  <div class="hearts">
+    <div class="heart" style="left: 5%; animation-delay: 0s;">💗</div>
+    <div class="heart" style="left: 15%; animation-delay: 1s;">💖</div>
+    <div class="heart" style="left: 25%; animation-delay: 2s;">💕</div>
+    <div class="heart" style="left: 35%; animation-delay: 3s;">💘</div>
+    <div class="heart" style="left: 45%; animation-delay: 0.5s;">💞</div>
+    <div class="heart" style="left: 55%; animation-delay: 1.5s;">💓</div>
+    <div class="heart" style="left: 65%; animation-delay: 2.5s;">❤️</div>
+    <div class="heart" style="left: 75%; animation-delay: 3.5s;">💙</div>
+    <div class="heart" style="left: 85%; animation-delay: 1.2s;">💖</div>
+    <div class="heart" style="left: 95%; animation-delay: 0.8s;">💘</div>
+  </div>
+
+  <h1>¡Dijiste que sí! 💍</h1>
+  <p>No puedo dejar de sonreír. ¡Este momento será para siempre!</p>
+  <p>Prometo darte mil razones para seguir diciendo sí, cada día, con cada beso, cada abrazo y cada risa que compartamos.</p>
+
+  <img class="gif" src="https://media.tenor.com/nLrQoMtZjl0AAAAC/bear-kiss.gif" alt="osito feliz" />
+
+  <div class="celebration">Nuestro amor acaba de comenzar... y va a ser hermoso 💫</div>
+
+  <div class="options">
+    <button onclick="alert('¡Prepárate para la mejor aventura de tu vida! 🌟')">Seguir soñando juntos</button>
+    <button onclick="alert('¡Estoy listo para escribir contigo la historia más linda del mundo! ✨')">¡Vamos por todo!</button>
+  </div>
+
+  <audio autoplay loop>
+    <source src="https://dl.sndup.net/2hvc/siii-cancion.mp3" type="audio/mpeg">
+    Tu navegador no soporta audio HTML5.
+  </audio>
+</body>
+</html>

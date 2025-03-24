@@ -46,31 +46,141 @@
       background-color: #e0eaff;
     }
 
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karen <3</title>
+  <style>
+    /* Estilos principales del cuerpo de la página */
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #a2c7e5, #5d8aa8); /* Degradado en tonos azules */
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      color: #fff;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+      position: relative;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin: 1rem 2rem;
+    }
+
+    /* Contenedor de los corazones flotantes */
+    .hearts {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none; /* Permite hacer clic a través */
+      overflow: hidden;
+    }
+
+    /* Cada corazón individual */
+    .heart {
+      position: absolute;
+      animation: float 6s infinite ease-in;
+      color: #ffccff;
+      font-size: 2rem;
+    }
+
+    /* Animación para que los corazones suban flotando */
+    @keyframes float {
+      0% { transform: translateY(100vh) scale(1); opacity: 0; }
+      50% { opacity: 1; }
+      100% { transform: translateY(-10vh) scale(1.5); opacity: 0; }
+    }
+
+    /* Estilos de los botones */
+    button {
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 12px;
+      background-color: #ffffff;
+      color: #5d8aa8;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin: 0.5rem;
+    }
+
+    button:hover {
+      background-color: #e0eaff;
+    }
+
+    /* Estilo del GIF */
     .gif {
       width: 300px;
       margin: 20px 0;
       border-radius: 10px;
     }
 
+    /* Oculta el reproductor de audio */
     audio {
       display: none;
     }
   </style>
 </head>
 <body>
-  <h1>Hola Karen</h1>
-  <h2>¿Quieres ser mi novia?</h2>
-
-  <img class="gif" src="https://media.tenor.com/q1iWXDb7-TcAAAAC/cute-cat.gif" alt="gatito" />
-
-  <div>
-    <button onclick="alert('Siii te amooo ❤️')">Sí quiero</button>
-    <button onclick="alert('Eso está prohibido, pero igual es un SÍ ❤️')">No (prohibido, igual es un sí)</button>
+  <!-- Contenedor con corazones animados flotando -->
+  <div class="hearts">
+    <div class="heart" style="left: 5%; animation-delay: 0s;">❤️</div>
+    <div class="heart" style="left: 10%; animation-delay: 1s;">💙</div>
+    <div class="heart" style="left: 20%; animation-delay: 2s;">💖</div>
+    <div class="heart" style="left: 30%; animation-delay: 3s;">💘</div>
+    <div class="heart" style="left: 40%; animation-delay: 1.5s;">💞</div>
+    <div class="heart" style="left: 50%; animation-delay: 0.5s;">💗</div>
+    <div class="heart" style="left: 60%; animation-delay: 2.5s;">💓</div>
+    <div class="heart" style="left: 70%; animation-delay: 3.5s;">💕</div>
+    <div class="heart" style="left: 80%; animation-delay: 1s;">💖</div>
+    <div class="heart" style="left: 90%; animation-delay: 0.2s;">💘</div>
   </div>
 
+  <!-- Título principal -->
+  <h1>Hola Karen</h1>
+
+  <!-- Mensaje poético y emocional -->
+  <h2>
+    Cada instante contigo ha sido como un sorbo de magia: suave, inesperado y profundamente dulce. 
+    Me has devuelto colores que creía perdidos, risas que parecían dormidas y emociones que juré eternas. 
+    No quiero más tiempo siendo solo "nosotros" sin ese título que grita lo que sentimos. 
+    Porque lo que me haces sentir no se puede callar, y el corazón ya no quiere esperar.
+  </h2>
+
+  <!-- Pregunta directa -->
+  <h2>¿Quieres ser mi novia?</h2>
+
+  <!-- Imagen de un gatito tierno -->
+  <img class="gif" src="https://media.tenor.com/q1iWXDb7-TcAAAAC/cute-cat.gif" alt="gatito" />
+
+  <!-- Botones con respuesta -->
+  <div>
+    <!-- Botón que redirige a una página especial si dice que sí -->
+    <button onclick="window.location.href='https://calcetina.netlify.app/sii'">Sí quiero</button>
+    <!-- Botón de "no" con respuesta amorosa, no importa que lo toque -->
+    <button onclick="alert('Intentaste negarte, pero el universo ya decidió que sí ❤️')">No (shhh... tu alma ya dijo que sí)</button>
+  </div>
+
+  <!-- Audio de fondo que se reproduce automáticamente -->
   <audio autoplay loop>
     <source src="https://dl.sndup.net/mz6h/CAS%20-%20K%20-%20Nadie%20Como%20T%C3%BA.mp3" type="audio/mpeg">
     Tu navegador no soporta audio HTML5.
   </audio>
 </body>
 </html>
+
