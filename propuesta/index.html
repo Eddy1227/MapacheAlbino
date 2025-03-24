@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karen <3</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #a2c7e5, #5d8aa8);
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      color: #fff;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    button {
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 12px;
+      background-color: #ffffff;
+      color: #5d8aa8;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin: 0.5rem;
+    }
+
+    button:hover {
+      background-color: #e0eaff;
+    }
+
+    .gif {
+      width: 300px;
+      margin: 20px 0;
+      border-radius: 10px;
+    }
+
+    audio {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Hola Karen</h1>
+  <h2>¿Quieres ser mi novia?</h2>
+
+  <img class="gif" src="https://media.tenor.com/q1iWXDb7-TcAAAAC/cute-cat.gif" alt="gatito" />
+
+  <div>
+    <button onclick="alert('Siii te amooo ❤️')">Sí quiero</button>
+    <button onclick="alert('Eso está prohibido, pero igual es un SÍ ❤️')">No (prohibido, igual es un sí)</button>
+  </div>
+
+  <audio autoplay loop>
+    <source src="https://dl.sndup.net/mz6h/CAS%20-%20K%20-%20Nadie%20Como%20T%C3%BA.mp3" type="audio/mpeg">
+    Tu navegador no soporta audio HTML5.
+  </audio>
+</body>
+</html>
